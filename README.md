@@ -5,7 +5,7 @@
 * https://en.wikipedia.org/wiki/CHIP-8
 * https://github.com/corax89/chip8-test-rom (Note: This test will tell you that the Annn instruction is incorrect, when it's actually checking the 2nnn instruction. It's [fixed here](https://github.com/corax89/chip8-test-rom/pull/9))
 
-### Install/Build
+### Install/Build:
 
 * To build, run `make`.
 * To install, run `sudo make install`.
