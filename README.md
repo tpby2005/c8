@@ -1,5 +1,7 @@
 # c8 - Chip8 Emulator
 
+![screenshot](./c8.png)
+
 ### References:
 * https://github.com/mattmikolay/chip-8/wiki/Mastering-CHIP%E2%80%908
 * https://en.wikipedia.org/wiki/CHIP-8
