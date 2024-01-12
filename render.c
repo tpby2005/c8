@@ -44,12 +44,23 @@ void render_update(Render *render, Chip8 *chip)
 
     clear();
 
+    mvprintw(0, 0, "Registers:");
     for (int i = 0; i < 16; i++)
     {
-        mvprintw(i, 0, "V%X: 0x%04X\t", i, chip->registers[i]);
+        mvprintw(i + 1, 0, "V%X: 0x%04X\t", i, chip->registers[i]);
     }
 
-    mvprintw(16, 0, "\n\nI: 0x%04X\t", chip->index);
+    mvprintw(18, 0, "Index:");
+    mvprintw(19, 0, "I:  0x%04X\t", chip->index);
+
+    mvprintw(21, 0, "Program Counter:");
+    mvprintw(22, 0, "PC: 0x%04X\t", chip->pc);
+
+    mvprintw(24, 0, "Keypad:");
+    for (int i = 0; i < 16; i++)
+    {
+        mvprintw(i + 25, 0, "%d\t", chip->keypad[i]);
+    }
 
     refresh();
 }
